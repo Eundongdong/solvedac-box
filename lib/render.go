@@ -52,9 +52,7 @@ func (user User) Render() (string, error) {
 	buf.WriteString(
 		fmt.Sprintf("%s     %s\n%s     %s\n",
 			renderField("✅ Solved: ", user.SolvedCount, half),
-			renderField("💠 Class: ", user.Class, half),
-			renderField("💡 Contributions: ", user.VoteCount, half),
-			renderField("🔥 Rivals: ", user.ReverseRivalCount, half),
+			renderField("💠 Class: ", user.Class, half)
 		),
 	)
 
